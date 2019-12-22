@@ -8,11 +8,11 @@ const multer = require("multer");
 const fileanalyse = require("./fileanalyse");
 var app = express();
 
-const upload = multer()
+const upload = multer();
 
 const multercfg = {
   storage: multer.memoryStorage()
-}
+};
 
 app.use(cors());
 app.use('/public', express.static(process.cwd() + '/public'));
